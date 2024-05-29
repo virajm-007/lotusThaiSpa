@@ -21,6 +21,7 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
@@ -51,8 +52,8 @@
                         <div class="d-flex flex-wrap">
                             <a href="#" class="me-4 text-light"><i
                                     class="fas fa-map-marker-alt text-primary me-2"></i>lotusthaispa latur</a>
-                            <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+91
-                                8625841333</a>
+                            <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>
+                                +917058030683, +918625841333</a>
                             <a href="#" class="text-light"><i
                                     class="fas fa-envelope text-primary me-2"></i>lotusthaispa89@gmail.com</a>
                         </div>
@@ -63,7 +64,8 @@
                                     class="fab fa-facebook-f"></i></a>
                             <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i
                                     class="fab fa-twitter"></i></a>
-                            <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i
+                            <a href="https://www.instagram.com/lotus_thai_spa_latur?igsh=N2JmYjc5MjkzeXFu"
+                                class="me-3 btn-square border rounded-circle nav-fill"><i
                                     class="fab fa-instagram"></i></a>
                             <a href="#" class="btn-square border rounded-circle nav-fill"><i
                                     class="fab fa-linkedin-in"></i></a>
@@ -75,9 +77,10 @@
         <div class="container-fluid bg-light">
             <div class="container px-0">
                 <nav class="navbar navbar-light navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="index.html" class="navbar-brand" style="display: flex;">
+
                         <h1 class="text-primary display-4" style="font-size: 30px">
-                            LotusThaiSpa
+                            <img src="./img/logo.png" alt="" style="width: 80px; margin-right: 8px;"> LotusThaiSpa
                         </h1>
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
@@ -88,11 +91,11 @@
                         <div class="navbar-nav mx-auto border-top">
                             <a href="index.html" class="nav-item nav-link ">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link active">Services</a>
+                            <a href="service.html" class="nav-item nav-link ">Services</a>
                             <!-- <a href="price.html" class="nav-item nav-link">Price</a> -->
                             <a href="testimonial.html" class="av-item nav-link ">Testimonial</a>
                             <a href="gallery.html" class="av-item nav-link ">Gallery</a>
-                            <a href="appointment.html" class="av-item nav-link ">Appointment</a>
+                            <a href="appointment.html" class="av-item nav-link active">Therepy</a>
                             <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -113,7 +116,7 @@
                             </button>
                             <a href="appointment.html"
                                 class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book
-                                Appointment</a>
+                                Therepy</a>
                         </div>
                     </div>
                 </nav>
@@ -148,11 +151,11 @@
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb py-5">
         <div class="container text-center py-5">
-            <h3 class="text-white display-3 mb-4">Appointment</h1>
+            <h3 class="text-white display-3 mb-4">Therepy</h1>
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-white">Appointment</li>
+                    <li class="breadcrumb-item active text-white">Therepy</li>
                 </ol>
         </div>
     </div>
@@ -166,40 +169,49 @@
                 <div class="col-lg-6">
                     <div class="appointment-form p-5">
                         <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
-                        <h1 class="display-4 mb-4 text-white">Get Appointment</h1>
-                        <form>
-                            <div class="row gy-3 gx-4">
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white"
-                                        placeholder="First Name">
+                        <h1 class="display-4 mb-4 text-white">Get Therepy</h1>
+                        <form action="contact.php" method="post">
+
+                            <div class="row gx-4 gy-3">
+                                <div class="col-xl-6">
+                                    <input type="text" class="form-control bg-white border-0 py-3 px-4"
+                                        name="first_name" placeholder="Your First Name" required>
                                 </div>
-                                <div class="col-lg-6">
-                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white"
-                                        placeholder="Email">
+                                <div class="col-xl-6">
+                                    <input type="email" class="form-control bg-white border-0 py-3 px-4" name="email"
+                                        placeholder="Your Email" required>
                                 </div>
-                                <div class="col-lg-6">
-                                    <select class="form-select py-3 border-white bg-transparent"
-                                        aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                <div class="col-xl-6">
+                                    <input type="text" class="form-control bg-white border-0 py-3 px-4" name="phone"
+                                        placeholder="Your Phone">
+                                </div>
+                                <div class="col-xl-6">
+                                    <select class="form-select py-3 border-white" name="massage_type"
+                                        aria-label="Default select example" required>
+                                        <option value="" disabled selected>Select Massage Type</option>
+                                        <option value="aroma-massage">Aroma Massage</option>
+                                        <option value="swedish-massage">Swedish Massage</option>
+                                        <option value="deep-tissue-massage">Deep Tissue Massage</option>
+                                        <option value="aloe-vera-jail-massage">Aloe Vera Jail Massage</option>
+                                        <option value="lomi-lomi-massage">Lomi Lomi Massage</option>
+                                        <option value="balinese-massage">Balinese Massage</option>
+                                        <option value="dry-massage">Dry Massage</option>
+                                        <option value="full-body-scrub">Full Body Scrub</option>
+                                        <option value="hot-oil-massage">Hot Oil Massage</option>
+                                        <option value="full-body-waxing">Full Body Waxing</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-6">
-                                    <input type="date" class="form-control py-3 border-white bg-transparent">
+                                <div class="col-12">
+                                    <textarea class="form-control bg-white border-0 py-3 px-4" name="message" rows="4"
+                                        cols="10" placeholder="Your Message" required></textarea>
                                 </div>
-                                <div class="col-lg-12">
-                                    <textarea class="form-control border-white bg-transparent text-white" name="text"
-                                        id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="button"
-                                        class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT
-                                        NOW</button>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5"
+                                        type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -281,13 +293,13 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Schedule</h4>
                         <p class="text-muted mb-0">
-                            Monday: <span class="text-white"> 09:00 am – 10:00 pm</span>
+                            Monday: <span class="text-white"> 09:00 am – 9:00 pm</span>
                         </p>
                         <p class="text-muted mb-0">
-                            Saturday: <span class="text-white"> 09:00 am – 08:00 pm</span>
+                            Saturday: <span class="text-white"> 09:00 am – 09:00 pm</span>
                         </p>
                         <p class="text-muted mb-0">
-                            Sunday: <span class="text-white"> 09:00 am – 05:00 pm</span>
+                            Sunday: <span class="text-white"> 09:00 am – 09:00 pm</span>
                         </p>
                         <h4 class="my-4 text-white">Address</h4>
                         <p class="mb-0">
@@ -301,7 +313,8 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Follow Us</h4>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                        <a href="https://www.instagram.com/lotus_thai_spa_latur?igsh=N2JmYjc5MjkzeXFu"><i
+                                class="fas fa-angle-right me-2"></i> Instagram</a>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
                         <h4 class="my-4 text-white">Contact Us</h4>
                         <p class="mb-0">
@@ -309,7 +322,7 @@
                             lotusthaispa89@gmail.com
                         </p>
                         <p class="mb-0">
-                            <i class="fas fa-phone text-secondary me-2"></i> +91 8625841333
+                            <i class="fas fa-phone text-secondary me-2"></i> +91 8625841333, +917058030683
                         </p>
                     </div>
                 </div>
@@ -333,7 +346,8 @@
                                 class="fab fa-facebook-f"></i></a>
                         <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
                                 class="fab fa-twitter"></i></a>
-                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                        <a href="https://www.instagram.com/lotus_thai_spa_latur?igsh=N2JmYjc5MjkzeXFu"
+                            class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
                                 class="fab fa-instagram"></i></a>
                         <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i
                                 class="fab fa-linkedin-in"></i></a>
@@ -350,6 +364,7 @@
         </div>
     </div>
     <!-- Copyright End -->
+
 
 
 
